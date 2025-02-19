@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reefscape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <div class="preMatch" id="page">
+        <h2>PRE-MATCH</h2>
+        <br><br>
+        <h5>Sout Name</h5>
+        <input type="text" id="scoutName" max="15" min="1" placeholder="name" required>
+        <br><br>
+        <h5>Match Level</h5>
+        <div>
+            <label>Practice</label>
+            <input type="radio" name="matchLevel" value="practice" required>
+        </div>
+        <div>
+            <label>Qualification</label>
+            <input type="radio" name="matchLevel" value="qualification" required>
+        </div>
+        <div>
+            <label>Finals</label>
+            <input type="radio" name="matchLevel" value="finals" required>
+        </div>
+        <h5>Team Number</h5>
+        <input type="number" id="teamNumber" placeholder="team number" required>
+    </div>
+    <div class="autonomus" id="page">
+        <h2>AUTONOMUS</h2>
+        <h5>Has Autonomus?</h5>
+        <input type="checkbox" value="hasAuto" required>
+        <br>
+        <h5>Coral Score</h5>
+        <label>Level 1</label>
+        <input type="number" min="0" max="10" value="al1" required>
+        <label>Level 2</label>
+        <input type="number" min="0" max="10" value="al2" required>
+        <label>Level 3</label>
+        <input type="number" min="0" max="10" value="al3" required>
+        <label>Level 4</label>
+        <input type="number" min="0" max="10" value="al4" required>
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
