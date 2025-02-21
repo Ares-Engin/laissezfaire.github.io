@@ -87,12 +87,35 @@
     <div class="endgame" id="page">
         <h2>ENDGAME</h2>
         <div class="timer">
+            <h5>Park Timer</h5>
             <button type="button" onclick="startTimer()">Start</button>
             <h4 id="timer"></h4>
             <button type="button" onclick="stopTimer()">Stop</button><br>
             <button type="button" onclick="resetTimer()">Reset</button>
         </div>
-        <br>
+        <br><br>
+        <h5>Final Robot Status</h5>
+        <div class="selection">
+            <label>Parked</label>
+            <input type="radio" id="parked" name="finalrobotstatus" value="Parked" required>
+        </div>
+        <div class="selection">
+            <label>Failed Climb</label>
+            <input type="radio" id="failedClimb" name="finalrobotstatus" value="Filed Climb" required>
+        </div>
+        <div class="selection">
+            <label>Shallow Cage</label>
+            <input type="radio" id="shallowCage" name="finalrobotstatus" value="Shallow Cage" required>
+        </div>
+        <div class="selection">
+            <label>Deep Cage</label>
+            <input type="radio" id="deepCage" name="finalrobotstatus" value="Deep Cage" required>
+        </div>
+        <div class="selection">
+            <label>Nothing</label>
+            <input type="radio" id="nothing" name="finalrobotstatus" value="Nothing" required>
+        </div>
+        <br><br>
     </div>
     <br>
     <div class="rating" id="page">
