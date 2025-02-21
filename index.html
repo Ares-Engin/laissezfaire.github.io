@@ -15,15 +15,15 @@
         <input type="text" id="scoutName" name="name" max="15" min="1" placeholder="name" required>
         <br><br>
         <h5>Match Level</h5>
-        <div>
+        <div class="selection">
             <label>Practice</label>
             <input type="radio" id="practice" name="matchLevel" value="Practice" required>
         </div>
-        <div>
+        <div  class="selection">
             <label>Qualification</label>
             <input type="radio" id="qualification" name="matchLevel" value="Qualification" required>
         </div>
-        <div>
+        <div  class="selection">
             <label>Finals</label>
             <input type="radio" id="finals" name="matchLevel" value="Finals" required>
         </div>
@@ -41,13 +41,13 @@
         <br>
         <h5>Coral Score</h5>
         <label>Level 1</label>
-        <input type="number" min="0" max="10" value="0" id="al1" required>
+        <input type="number" min="0" max="16" value="0" id="al1" required>
         <label>Level 2</label>
-        <input type="number" min="0" max="10" value="0" id="al2" required>
+        <input type="number" min="0" max="16" value="0" id="al2" required>
         <label>Level 3</label>
-        <input type="number" min="0" max="10" value="0" id="al3" required>
+        <input type="number" min="0" max="16" value="0" id="al3" required>
         <label>Level 4</label>
-        <input type="number" min="0" max="10" value="0" id="al4" required>
+        <input type="number" min="0" max="16" value="0" id="al4" required>
         <br><br>
     </div>
     <br>
@@ -56,28 +56,28 @@
         <br>
         <h5>Coral Score</h5>
         <label>Level 1</label>
-        <input type="number" min="0" max="10" value="0" id="tl1" required>
+        <input type="number" min="0" max="16" value="0" id="tl1" required>
         <label>Level 2</label>
-        <input type="number" min="0" max="10" value="0" id="tl2" required>
+        <input type="number" min="0" max="16" value="0" id="tl2" required>
         <label>Level 3</label>
-        <input type="number" min="0" max="10" value="0" id="tl3" required>
+        <input type="number" min="0" max="16" value="0" id="tl3" required>
         <label>Level 4</label>
-        <input type="number" min="0" max="10" value="0" id="tl4" required>
+        <input type="number" min="0" max="16" value="0" id="tl4" required>
         <br><br>
         <h5>Pickup From</h5>
-        <div>
+        <div class="selection">
             <label>Coral Station</label>
             <input type="radio" id="coralStation" name="pickupFrom" value="Coral Station" required>
         </div>
-        <div>
+        <div class="selection">
             <label>Floor</label>
             <input type="radio" id="floor" name="pickupFrom" value="Floor" required>
         </div>
-        <div>
+        <div class="selection">
             <label>Both</label>
             <input type="radio" id="both" name="pickupFrom" value="Both" required>
         </div>
-        <div>
+        <div class="selection">
             <label>Not Attempted</label>
             <input type="radio" id="notAttempted" name="pickupFrom" value="Not Attempted" required>
         </div>
@@ -86,7 +86,13 @@
     <br>
     <div class="endgame" id="page">
         <h2>ENDGAME</h2>
-        
+        <div class="timer">
+            <button type="button" onclick="startTimer()">Start</button>
+            <h4 id="timer"></h4>
+            <button type="button" onclick="stopTimer()">Stop</button><br>
+            <button type="button" onclick="resetTimer()">Reset</button>
+        </div>
+        <br>
     </div>
     <br>
     <div class="rating" id="page">
