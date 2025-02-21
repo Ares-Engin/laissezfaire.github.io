@@ -30,3 +30,13 @@ div.selection{
     margin: auto;
     align-items: center;
 }
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+}
