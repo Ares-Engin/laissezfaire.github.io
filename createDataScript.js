@@ -168,6 +168,23 @@ function updateNumbers(){
     document.getElementById("tan_14").value = numCaunters[13];
     document.getElementById("tap_15").value = numCaunters[14];
     document.getElementById("taf_16").value = numCaunters[15];
+
+    document.getElementById("al1_1").innerText = numCaunters[0];
+    document.getElementById("al2_2").innerText = numCaunters[1];
+    document.getElementById("al3_3").innerText = numCaunters[2];
+    document.getElementById("al4_4").innerText = numCaunters[3];
+    document.getElementById("adc_5").innerText = numCaunters[4];
+    document.getElementById("aan_6").innerText = numCaunters[5];
+    document.getElementById("aap_7").innerText = numCaunters[6];
+    document.getElementById("aaf_8").innerText = numCaunters[7];
+    document.getElementById("tl1_9").innerText = numCaunters[8];
+    document.getElementById("tl2_10").innerText = numCaunters[9];
+    document.getElementById("tl3_11").innerText = numCaunters[10];
+    document.getElementById("tl4_12").innerText = numCaunters[11];
+    document.getElementById("tdc_13").innerText = numCaunters[12];
+    document.getElementById("tan_14").innerText = numCaunters[13];
+    document.getElementById("tap_15").innerText = numCaunters[14];
+    document.getElementById("taf_16").innerText = numCaunters[15];
 }
 
 function decreaseNum(d_num){
