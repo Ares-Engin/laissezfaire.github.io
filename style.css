@@ -1,0 +1,25 @@
+body{
+    background-color:  #E05A24;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+}
+img{
+    height: 500px;
+    width: auto;
+}
+h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+#reader{ 
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
