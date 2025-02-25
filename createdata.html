@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reefscape</title>
+    <link rel="stylesheet" href="createDataStyle.css">
+</head>
+<body>
+    <h1>LAISSEZ FAIRE SCOUTING SYSTEM</h1>
+    <form id="matchForm">
+    <div class="preMatch" id="page">
+        <h2>PRE-MATCH</h2>
+        <br><br>
+        <h5>Scout Name</h5>
+        <input type="text" id="scoutName" name="name" max="15" min="1" placeholder="name" required>
+        <br><br>
+        <h5>Match Level</h5>
+        <div class="selection">
+            <label>Practice</label>
+            <input type="radio" id="practice" name="matchLevel" value="Practice" required>
+        </div>
+        <div  class="selection">
+            <label>Qualification</label>
+            <input type="radio" id="qualification" name="matchLevel" value="Qualification" required>
+        </div>
+        <div  class="selection">
+            <label>Finals</label>
+            <input type="radio" id="finals" name="matchLevel" value="Finals" required>
+        </div>
+        <h5>Match Number</h5>
+        <input type="number" id="matchNumber" placeholder="match number" required>
+        <h5>Team Number</h5>
+        <input type="number" id="teamNumber" placeholder="team number" required>
+        <br><br>
+    </div>
+    <br>
+    <div class="autonomus" id="page">
+        <h2>AUTONOMUS</h2>
+        <h5>Has Autonomus?</h5>
+        <input type="checkbox" name="hasAuto" id="hasAuto" value="hasAuto">
+        <br>
+        <h5>Coral Score</h5>
+        <label>Level 1</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(1)">-</button>
+            <p class="numChangeNum" id="al1_1">0</p>
+            <button class="range" type="button" onclick="increaseNum(1)">+</button>
+        </div>
+        <label>Level 2</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(2)">-</button>
+            <p class="numChangeNum" id="al2_2">0</p>
+            <button class="range" type="button" onclick="increaseNum(2)">+</button>
+        </div>
+        <label>Level 3</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(3)">-</button>
+            <p class="numChangeNum" id="al3_3">0</p>
+            <button class="range" type="button" onclick="increaseNum(3)">+</button>
+        </div>
+        <label>Level 4</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(4)">-</button>
+            <p class="numChangeNum" id="al4_4">0</p>
+            <button class="range" type="button" onclick="increaseNum(4)">+</button>
+        </div>
+        <label>Dropped</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(5)">-</button>
+            <p class="numChangeNum" id="adc_5">0</p>
+            <button class="range" type="button" onclick="increaseNum(5)">+</button>
+        </div>
+        <h5>Takes Algae?</h5>
+        <input type="checkbox" id="takesAlgae">
+        <h5>Algae Score</h5>
+        <label>Net</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(6)">-</button>
+            <p class="numChangeNum" id="aan_6">0</p>
+            <button class="range" type="button" onclick="increaseNum(6)">+</button>
+        </div>
+        <label>Processor</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(7)">-</button>
+            <p class="numChangeNum" id="aap_7">0</p>
+            <button class="range" type="button" onclick="increaseNum(7)">+</button>
+        </div>
+        <label>Failed</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(8)">-</button>
+            <p class="numChangeNum" id="aaf_8">0</p>
+            <button class="range" type="button" onclick="increaseNum(8)">+</button>
+        </div>
+        <br><br>
+    </div>
+    <br>
+    <div class="teleOp" id="page">
+        <h2>TELEOP</h2>
+        <br>
+        <h5>Coral Score</h5>
+        <label>Level 1</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(9)">-</button>
+            <p class="numChangeNum" id="tl1_9">0</p>
+            <button class="range" type="button" onclick="increaseNum(9)">+</button>
+        </div>
+        <label>Level 2</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(10)">-</button>
+            <p class="numChangeNum" id="tl2_10">0</p>
+            <button class="range" type="button" onclick="increaseNum(10)">+</button>
+        </div>
+        <label>Level 3</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(11)">-</button>
+            <p class="numChangeNum" id="tl3_11">0</p>
+            <button class="range" type="button" onclick="increaseNum(11)">+</button>
+        </div>
+        <label>Level 4</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(12)">-</button>
+            <p class="numChangeNum" id="tl4_12">0</p>
+            <button class="range" type="button" onclick="increaseNum(12)">+</button>
+        </div>
+        <label>Dropped</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(13)">-</button>
+            <p class="numChangeNum" id="tdc_13">0</p>
+            <button class="range" type="button" onclick="increaseNum(13)">+</button>
+        </div>
+        <br><br>
+        <h5>Coral Pickup From</h5>
+        <div class="selection">
+            <label>Coral Station</label>
+            <input type="radio" id="coralStation" name="pickupFrom" value="Coral Station" required>
+        </div>
+        <div class="selection">
+            <label>Floor</label>
+            <input type="radio" id="floor" name="pickupFrom" value="Floor" required>
+        </div>
+        <div class="selection">
+            <label>Both</label>
+            <input type="radio" id="both" name="pickupFrom" value="Both" required>
+        </div>
+        <div class="selection">
+            <label>Not Attempted</label>
+            <input type="radio" id="notAttempted" name="pickupFrom" value="Not Attempted" required>
+        </div>
+        <br>
+        <h5>Algae Score</h5>
+        <label>Net</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(14)">-</button>
+            <p class="numChangeNum" id="tan_14">0</p>
+            <button class="range" type="button" onclick="increaseNum(14)">+</button>
+        </div>
+        <label>Processor</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(15)">-</button>
+            <p class="numChangeNum" id="tap_15">0</p>
+            <button class="range" type="button" onclick="increaseNum(15)">+</button>
+        </div>
+        <label>Failed</label>
+        <div class="numChange">
+            <button class="range" type="button" onclick="decreaseNum(16)">-</button>
+            <p class="numChangeNum" id="taf_16">0</p>
+            <button class="range" type="button" onclick="increaseNum(16)">+</button>
+        </div>
+        <br>
+
+        
+
+        <br>
+        <h5>Algae Pickup From</h5>
+        <div class="selection">
+            <label>Reef</label>
+            <input type="radio" id="reef" name="algaePickupFrom" value="Reef" required>
+        </div>
+        <div class="selection">
+            <label>Floor</label>
+            <input type="radio" id="floor" name="algaePickupFrom" value="Floor" required>
+        </div>
+        <div class="selection">
+            <label>Both</label>
+            <input type="radio" id="both" name="algaePickupFrom" value="Both" required>
+        </div>
+        <div class="selection">
+            <label>Not Attempted</label>
+            <input type="radio" id="notAttempted" name="algaePickupFrom" value="Not Attempted" required>
+        </div>
+
+
+        <br><br>
+    </div>
+    <br>
+    <div class="endgame" id="page">
+        <h2>ENDGAME</h2>
+        <div class="timer">
+            <h5>Park Timer</h5>
+            <button type="button" onclick="startTimer()">Start</button>
+            <h4 id="timer"></h4>
+            <button type="button" onclick="stopTimer()">Stop</button><br>
+            <button type="button" onclick="resetTimer()">Reset</button>
+        </div>
+        <br><br>
+        <h5>Final Robot Status</h5>
+        <div class="selection">
+            <label>Parked</label>
+            <input type="radio" id="parked" name="finalrobotstatus" value="Parked" required>
+        </div>
+        <div class="selection">
+            <label>Failed Climb</label>
+            <input type="radio" id="failedClimb" name="finalrobotstatus" value="Filed Climb" required>
+        </div>
+        <div class="selection">
+            <label>Shallow Cage</label>
+            <input type="radio" id="shallowCage" name="finalrobotstatus" value="Shallow Cage" required>
+        </div>
+        <div class="selection">
+            <label>Deep Cage</label>
+            <input type="radio" id="deepCage" name="finalrobotstatus" value="Deep Cage" required>
+        </div>
+        <div class="selection">
+            <label>Nothing</label>
+            <input type="radio" id="nothing" name="finalrobotstatus" value="Nothing" required>
+        </div>
+        <br><br>
+    </div>
+    <br>
+    <div class="rating" id="page">
+        <h2>RATING</h2>
+        <h5>Driver Skill</h5>
+        <label> Bad Driving -- Excellent Driving</label>
+        <input type="range" min="1" max="5" id="driverSkill">
+        <h5>Defense Rating</h5>
+        <label> No Defense -- Excellent Defense</label>
+        <input type="range" min="1" max="5" id="defenseRating">
+        <h5>Speed Rating</h5>
+        <label> Slow -- Fast</label>
+        <input type="range" min="1" max="5" id="speedRating">
+        <h5>Died?</h5>
+        <input type="checkbox" id="died">
+        <h5>Stabilization</h5>
+        <label> Almost Tipped -- Stable</label>
+        <input type="range" min="1" max="5" id="stabilization">
+        <h5>Make Good Alliance</h5>
+        <label> Bad -- Excellent</label>
+        <input type="range" min="1" max="5" id="makeGoodAlliance">
+        <h5>Comment</h5>
+        <input type="text" id="comment" name="comment" placeholder="comments">
+        <br><br>
+    </div>
+    <br>
+    <div class="submit" id="page">
+        <br><br>
+        <img id="qrImage" src="" alt="QR Code" class="qrcode">
+        <br><br>
+        <input type="submit" value="Submit">
+        <br><br>
+        <h4 id="result"></h4>
+        <br>
+        <img src="logo.png">
+        <br>
+        <button><a href="index.html">Return Home</a></button>
+        <br>
+    </div>
+    </form>
+    <script src="createDataScript.js"></script>
+</body>
+</html>
