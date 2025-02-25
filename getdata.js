@@ -22,7 +22,7 @@ function seperateData(data){
             GetData[dataNo] = ""
         }
         else{
-            GetData[dataNo] = GetData[dataNo] , char;
+            GetData[dataNo] = GetData[dataNo] + char;
         }
     }
     document.getElementById("resultData").innerText = GetData[17];
