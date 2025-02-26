@@ -78,6 +78,7 @@ p.numChangeNum{
     align-content: center;
 }
 #result_correctorder{
-    align-content: center;
-    width: 200px;
+    max-width: 100%;  /* Prevents the paragraph from exceeding the screen width */
+    word-wrap: break-word;  /* Breaks long words to prevent overflow */
+    overflow-wrap: break-word;  /* Ensures wrapping in modern browsers */
 }
