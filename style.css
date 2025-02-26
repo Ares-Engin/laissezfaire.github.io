@@ -77,3 +77,7 @@ p.numChangeNum{
     align-self: center;
     align-content: center;
 }
+#result_correctorder{
+    align-content: center;
+    width: fit-content;
+}
