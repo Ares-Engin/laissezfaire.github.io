@@ -81,4 +81,14 @@ p.numChangeNum{
     max-width: 100%;  /* Prevents the paragraph from exceeding the screen width */
     word-wrap: break-word;  /* Breaks long words to prevent overflow */
     overflow-wrap: break-word;  /* Ensures wrapping in modern browsers */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing content */
+    text-overflow: ellipsis; /* Adds "..." when text is cut off */
+    font-size: 14px;  /* Reduce font size for smaller screens */
+    padding: 10px;  /* Adjust spacing */
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100vw; /* Prevents it from exceeding the screen width */
+    overflow: hidden; /* Hides anything that overflows */
 }
