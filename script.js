@@ -165,7 +165,7 @@ function increaseNum(i_num){
 }
 
 function copyText() {
-    let text = document.getElementById("result_correctorder").value;
+    let text = document.getElementById("result_correctorder").innerText;
     navigator.clipboard.writeText(text).then(() => {
         alert("Text copied!");
     }).catch(err => console.error("Error copying text:", err));
