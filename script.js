@@ -72,9 +72,9 @@ document.getElementById("matchForm").addEventListener("submit", function(event) 
     }
 
     let TeleOpScore_35 = GetTl1_09 * 2 + GetTl2_10 * 3 + GetTl3_11 * 4 + GetTl4_12 * 5 + GetTan_14 * 4 + GetTap_15 * 6;
-    let EndGameScore_35 = parkScore;
+    let EndGameScore_36 = parkScore;
 
-    onlyDataCorrectOrder = `${GetScoutName_17}*${GetMatchLevel_18}*${GetMatchNumber_19}*${GetTeamNumber_20}*${GetHasAuto_21}*${GetAl1_01}*${GetAl2_02}*${GetAl3_03}*${GetAl4_04}*${GetAdc_05}*${GetTakesAlgae_22}*${GetAan_06}*${GetAap_07}*${GetAaf_08}*${GetTl1_09}*${GetTl2_10}*${GetTl3_11}*${GetTl4_12}*${GetTdc_13}*${GetPickupFrom_23}*${GetTan_14}*${GetTap_15}*${GetTaf_16}*${GetAlgaePickupFrom_24}*${GetParkTime_25}*${GetFinalRobotStatus_26}*${GetDriverSkill_27}*${GetDefenseRating_28}*${GetSpeedRating_29}*${GetDied_30}*${GetStabilization_31}*${GetMakeGoodAlliance_32}*${GetComment_33}*${AutonomusScore_34}*${TeleOpScore_35}*${EndGameScore_36}*${AutonomusScore_34 + TeleOpScore_35 + EndGameScore_36} + `
+    onlyDataCorrectOrder = `${GetScoutName_17}*${GetMatchLevel_18}*${GetMatchNumber_19}*${GetTeamNumber_20}*${GetHasAuto_21}*${GetAl1_01}*${GetAl2_02}*${GetAl3_03}*${GetAl4_04}*${GetAdc_05}*${GetTakesAlgae_22}*${GetAan_06}*${GetAap_07}*${GetAaf_08}*${GetTl1_09}*${GetTl2_10}*${GetTl3_11}*${GetTl4_12}*${GetTdc_13}*${GetPickupFrom_23}*${GetTan_14}*${GetTap_15}*${GetTaf_16}*${GetAlgaePickupFrom_24}*${GetParkTime_25}*${GetFinalRobotStatus_26}*${GetDriverSkill_27}*${GetDefenseRating_28}*${GetSpeedRating_29}*${GetDied_30}*${GetStabilization_31}*${GetMakeGoodAlliance_32}*${GetComment_33}*${AutonomusScore_34}*${TeleOpScore_35}*${EndGameScore_36}*${AutonomusScore_34 + TeleOpScore_35 + EndGameScore_36}`;
    
     document.getElementById("result_correctorder").innerText = onlyDataCorrectOrder;
 
