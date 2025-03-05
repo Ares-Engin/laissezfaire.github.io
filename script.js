@@ -69,6 +69,8 @@ document.getElementById("matchForm").addEventListener("submit", function(event) 
         parkScore = 6;
     } else if (GetFinalRobotStatus_26 === "deepCage") {
         parkScore = 12;
+    } else if (GetFinalRobotStatus_26 === "failedClimb") {
+        parkScore = 2;
     }
 
     let TeleOpScore_35 = GetTl1_09 * 2 + GetTl2_10 * 3 + GetTl3_11 * 4 + GetTl4_12 * 5 + GetTan_14 * 4 + GetTap_15 * 6;
